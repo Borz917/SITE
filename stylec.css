@@ -1,0 +1,41 @@
+@import url("style.css");
+
+/*.form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e7eb;
+}
+
+.form button {
+  padding: 10px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form input,
+.form textarea {
+  border-radius: 6px;
+}
+
+.form textarea {
+  min-height: 120px;
+}
+
+.form button {
+  border-radius: 6px;
+}
+
+.form button:hover {
+  opacity: 0.85;
+}
+ */

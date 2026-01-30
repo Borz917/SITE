@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+    <link rel="stylesheet" href="stylecv.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header class="header">
+  <div class="header-left">
+    <img src="img/logo.png" width="110">
+    <span class="site-title">Curriculum Vitae</span>
+  </div>
+
+  <!-- Bouton menu mobile -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav class="header-nav" id="nav">
+    <a href="index.html" >Accueil</a>
+    <a href="cour.html">Cours</a>
+    <a href="pc.html">Parcours</a>
+    <a href="cv.html"class="active">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+    <div class="cv">
+
+        <!-- COLONNE GAUCHE -->
+        <aside class="left">
+            <h1>Zelimkhan Mataev</h1>
+            <p class="job">Agent de sécurité – SSIAP 1</p>
+
+            <div class="block">
+                <h3>Contact</h3>
+                <p>📞 07 68 51 13 54</p>
+                <p>✉️ z.mataev@outlook.fr</p>
+                <p>📍 Fleury-Mérogis (91)</p>
+            </div>
+
+            <div class="block">
+                <h3>Compétences</h3>
+                <ul>
+                    <li>Surveillance et prévention des risques</li>
+                    <li>Gestion des conflits</li>
+                    <li>Respect des procédures de sécurité</li>
+                    <li>Pack Office (Word, Excel, PowerPoint)</li>
+                    <li>Canva</li>
+                    <li>Informatique générale</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <h3>Langues</h3>
+                <ul>
+                    <li>Français : niveau B2</li>
+                    <li>Anglais : intermédiaire</li>
+                    <li>Espagnol : notions</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <h3>Centres d’intérêt</h3>
+                <ul>
+                    <li>Sport</li>
+                    <li>Technologie</li>
+                    <li>Jeux vidéo</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- COLONNE DROITE -->
+        <main class="right">
+            <section>
+                <div class="container">
+
+                    <article>
+                        <h2>Présentation</h2>
+                        <p>
+                            Jeune professionnel motivé, titulaire du diplôme SSIAP 1, je souhaite évoluer dans le
+                            domaine
+                            de la sécurité. Sérieux, discipliné et attentif, je suis capable d’assurer la surveillance
+                            des
+                            sites, la prévention des risques et le respect des consignes de sécurité.
+                            À l’aise avec les outils informatiques et doté d’un bon esprit d’équipe, je cherche à
+                            développer mes compétences et à acquérir de l’expérience sur le terrain.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h2>Formations et diplômes</h2>
+                        <ul>
+                            <li class="exp">
+                                <span class="periode">2024 – 2025</span>
+                                <span class="desc">
+                                    SSIAP 1 – Agent de Service de Sécurité Incendie<br>
+                                    Centre Amphia
+                                </span>
+                            </li>
+                            <br>
+                            <li class="exp">
+                                <span class="periode">2025</span>
+                                <span class="desc">
+                                    Certification SST – Sauveteur Secouriste du Travail
+                                </span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h2>Expériences professionnelles</h2>
+                        <ul class="top10">
+                            <li class="exp">
+                                <span class="periode">Janvier – Février 2024</span>
+                                <span class="desc">
+                                    <strong>Employé polyvalent (Stage)</strong><br>
+                                    GiFi – Fleury-Mérogis
+                                </span>
+                            </li>
+                            <br>
+                            <li class="exp">
+                                <span class="periode">Novembre – Décembre 2024</span>
+                                <span class="desc">
+                                    <strong>Employé polyvalent (Stage)</strong><br>
+                                    GiFi – Fleury-Mérogis
+                                </span>
+                            </li>
+                            <br>
+                            <li class="exp">
+                                <span class="periode">Mars 2022</span>
+                                <span class="desc">
+                                    <strong>Stage en entreprise</strong><br>
+                                    Gedenim
+                                </span>
+                            </li>
+                        </ul>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+<script>
+function toggleMenu() {
+  document.getElementById("nav").classList.toggle("show");
+}
+</script>
+<script>
+function toggleMenu(){
+  document.getElementById("nav").classList.toggle("show");
+}
+
+/* Animation scroll */
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 80) {
+      el.classList.add("visible");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+</script>
+
+</body>
+
+</html>
